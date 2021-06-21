@@ -1,0 +1,10 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} 详情</h2>
+  <div><span>序号: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name">英雄的名字: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+  </div>
+  <button (click)="goBack()">返回上级</button>
+  <button (click)="save()">保存修改</button>
+</div>
